@@ -4,16 +4,20 @@
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int n;
-	printf("Digite um número inteiro: ");
+	printf("Digite um nÃºmero inteiro: ");
 	scanf("%i", &n);
 	
-	if(n > 0){
-		printf("\n%i é positivo!", n);
+	(n > 0) ? printf("\n%i Ã© positivo!", n) : 
+		(n == 0) ? printf("\n0 Ã© neutro!") : 
+			printf("\n%i Ã© negativo", n);
+	
+	/*if(n > 0){
+		printf("\n%i Ã© positivo!", n);
 	} else if(n == 0){
-		printf("\n0 é neutro!");
+		printf("\n0 Ã© neutro!");
 	}else{
-		printf("\n%i é negativo", n);
-	}
+		printf("\n%i Ã© negativo", n);
+	}*/
 	
 	return(0);
 }
